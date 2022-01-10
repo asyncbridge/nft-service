@@ -1,0 +1,25 @@
+{
+  "name": "nft-service",
+  "version": "0.0.1",
+  "description": "NFT backend service based on Express.js",
+  "author": "Jinmyung Joo <jm84.joo@gmail.com>",
+  "scripts": {
+	"compile": "truffle compile",
+	"deploy": "truffle networks --clean&&truffle migrate --network=develop",
+    "start": "npm run pie-linux",
+	"pie-linux": "stack=pie node ./app.js",
+	"stage-linux": "stack=stage node ./app.js",
+	"prod-linux": "stack=prod node ./app.js",
+	"pie-windows": "set stack=pie&&node ./app.js", 
+	"stage-windows": "set stack=stage&&node ./app.js",
+	"prod-windows": "set stack=prod&&node ./app.js"
+  },
+  "devDependencies":{
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "web3": "^1.5.2",
+    "@truffle/contract": "^4.3.42",
+    "body-parser": "^1.18.2"
+  }
+}

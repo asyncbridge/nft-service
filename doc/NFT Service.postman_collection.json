@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "2d9ab469-6dd9-408e-b980-8936610b55d3",
+		"name": "NFT Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "totalSupply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/totalsupply",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"totalsupply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/accounts",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balanceOf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/balanceof/0xDEd23FEb42Bace0Fd1743A75ae8c56a6B05a3533",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"balanceof",
+						"0xDEd23FEb42Bace0Fd1743A75ae8c56a6B05a3533"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n    \"x\": 12,\r\n    \"y\": 3,\r\n    \"z\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/mint",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"mint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "symbol",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/symbol",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"symbol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/name",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ownerOf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/ownerof/0",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"ownerof",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\" : \"0x1101e914E778530c9ddB746168C083Bd6a3bDDF8\",\r\n    \"to\" : \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n    \"token_id\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/transfer",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n    \"to\" : \"0x25FaeB9071a29319ECa9d85ed0b91042e13eCe20\",\r\n    \"token_id\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/approve",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"approve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setapproveforall",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n    \"to\" : \"0x25FaeB9071a29319ECa9d85ed0b91042e13eCe20\",\r\n    \"approved\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/setapproveforall",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"setapproveforall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approved",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/approved/0",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"approved",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approvedforall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"owner\" : \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n   \"operator\" : \"0x25FaeB9071a29319ECa9d85ed0b91042e13eCe20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/approvedforall",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"approvedforall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "burn",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n    \"token_id\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/burn",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"burn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tokenbyindex",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"owner\" : \"0x3238F2CA9Dac036feD897B8e05ae5F04fAA17f40\",\r\n   \"operator\" : \"0x25FaeB9071a29319ECa9d85ed0b91042e13eCe20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ip_local}}:8080{{apiprefix}}/tokenbyindex/0",
+					"protocol": "http",
+					"host": [
+						"{{ip_local}}"
+					],
+					"port": "8080{{apiprefix}}",
+					"path": [
+						"tokenbyindex",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

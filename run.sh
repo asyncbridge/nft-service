@@ -1,0 +1,1 @@
+docker run -p 8080:8080 -it -e MODE=0 aibakevision/nft-service:0.0.1
