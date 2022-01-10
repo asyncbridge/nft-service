@@ -47,4 +47,5 @@ npm run pie-linux
 
 ## License and Citation
 
-This project is made available under the [MIT License](LICENSE).
+- This project is made available under the [MIT License](LICENSE).
+- https://www.inflearn.com/course/erc-721/?action=questions&filter=open#curriculum
