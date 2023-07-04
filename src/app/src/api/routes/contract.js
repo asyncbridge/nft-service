@@ -6,7 +6,7 @@ function responseHandler(res, statusCode, error, answer)
 {
 	if (error)
 	{
-		res.status(statusCode).json({status:"failure", data:{message:error}});
+		res.status(statusCode).json({status:"error", data:{message:error}});
 	}
 	else
 	{
